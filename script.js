@@ -80,29 +80,30 @@ gsap.from(".cards", {
   }
 })
 
-gsap.from("#col1" , {
-  x : -70,
-  y : -70,
-  scrollTrigger:{
-    trigger:"#col1",
-    scroller : "body",
-    start : "top 50%",
-    end : "top 45%",
-    scrab : 4,
-  }
-})
 
-gsap.from("#col2" , {
-  x : 70,
-  y : 70,
-  scrollTrigger:{
-    trigger:"#col1",
-    scroller : "body",
-    start : "top 50%",
-    end : "top 45%",
-    scrab : 4,
-  }
-})
+gsap.from("#colon1", {
+  y: -70,
+  x: -70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
+
+gsap.from("#colon2", {
+  y: 70,
+  x: 70,
+  scrollTrigger: {
+    trigger: "#colon1",
+    scroller: "body",
+    start: "top 55%",
+    end: "top 45%",
+    scrub: 4,
+  },
+});
 
 gsap.from("#page4 h1" , {
   y : 70,
